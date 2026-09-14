@@ -248,7 +248,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         Text(
-          '${_data!.aqiCategory} ${getEmoji(_data!.aqiCategory)}',
+          '${_data!.aqiCategory}',
           textAlign: TextAlign.center,
           style: const TextStyle(
             fontSize: 22,

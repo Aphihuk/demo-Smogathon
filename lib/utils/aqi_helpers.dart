@@ -37,16 +37,16 @@ List<Color> getAqiGradient(int aqi) {
   return [const Color(0xFF641E16), const Color(0xFF1B0000)]; // Hazardous: Maroon
 }
 
-String getEmoji(String category) {
-  final lower = category.toLowerCase();
-  if (lower.contains('good')) return '😊';
-  if (lower.contains('moderate')) return '😐';
-  if (lower.contains('unhealthy for sensitive')) return '😷';
-  if (lower.contains('unhealthy') && !lower.contains('very')) return '🤢';
-  if (lower.contains('very unhealthy')) return '🤮';
-  if (lower.contains('hazardous')) return '☠️';
-  return '☁️';
-}
+// String getEmoji(String category) {
+//   final lower = category.toLowerCase();
+//   if (lower.contains('good')) return '😊';
+//   if (lower.contains('moderate')) return '😐';
+//   if (lower.contains('unhealthy for sensitive')) return '😷';
+//   if (lower.contains('unhealthy') && !lower.contains('very')) return '🤢';
+//   if (lower.contains('very unhealthy')) return '🤮';
+//   if (lower.contains('hazardous')) return '☠️';
+//   return '☁️';
+// }
 
 String getHealthAdvice(String category) {
   final lower = category.toLowerCase();
